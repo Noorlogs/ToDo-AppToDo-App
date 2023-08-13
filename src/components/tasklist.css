@@ -1,0 +1,57 @@
+/* tasklist.css */
+.task-list {
+    margin-top: 20px;
+}
+
+.task {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333;
+    padding: 10px;
+    margin-top: 10px;
+    border-radius: 5px;
+}
+
+.task span {
+    color: white;
+}
+
+.task-icons {
+    display: flex;
+}
+
+.icon {
+    font-size: 18px;
+    margin: 0 5px;
+    cursor: pointer;
+    color: #fff;
+}
+
+.edit-icon:hover {
+    color: #03f40f;
+}
+
+.delete-icon:hover {
+    color: red;
+}
+
+.done-icon:hover {
+    color: #0a6f0a;
+}
+
+/* tasklist.css */
+
+.task.completed {
+    text-decoration: line-through;
+    /* Apply line-through for completed tasks */
+    opacity: 0.6;
+    /* Reduce opacity for completed tasks */
+}
+
+.task-description {
+    /* Add word-wrap property to allow word wrapping */
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+    word-break: break-word;
+}
